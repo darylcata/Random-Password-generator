@@ -88,10 +88,33 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
+// Function to ask for password options
+function getPasswordOptions(a) {
+  var ask = confirm("Do you want " + a + " characters in your password?");
+  if (ask === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Function for getting a random element from an array
+
+function getRandom(a) {
+  return a[Math.floor(Math.random() * a.length)];
+}
 
 
-function getPasswordOptions() {
+
+// Function to generate password with user input
+
+
+
+function generatePassword() {
+  var special = "";
+  var numeric = "";
+  var lowerCased = "";
+  var upperCased = "";
   var userInput = prompt("How long do you want your password to be?");
 
   if (userInput < 10) {
@@ -99,28 +122,39 @@ function getPasswordOptions() {
   } else if (userInput > 64) {
     alert("Password lentgth too long, it must be at most 64 characters long")
   } else {
-
-  var askSpecialCharacter = confirm("Do you want special characters in your password?");
- 
-  var askNumericCharacter = confirm("Do you want numeric characters in your password?");
-  
-  var askLowerCasedCharacter = confirm("Do you want lower cased characters in your password?");
-  
-  var askUpperCasedCharacter = confirm("Do you want upper cased characters in your password?");
+    if (getPasswordOptions("special") === true) {
+      for (var i = 0; i < userInput; i++) {
+        special += getRandom(specialCharacters);
+      }
+    }
+    if (getPasswordOptions("numeric") === true) {
+      for (var i = 0; i < userInput; i++) {
+        numeric += getRandom(numericCharacters);
+      }
+    }
+    if (getPasswordOptions("lower cased") === true) {
+      for (var i = 0; i < userInput; i++) {
+        lowerCased += getRandom(lowerCasedCharacters);
+      }
+    }
+    if (getPasswordOptions("upper cased") === true) {
+      for (var i = 0; i < userInput; i++) {
+        upperCased += getRandom(upperCasedCharacters);
+      }
+    }
   }
+
+  var generatedPassword = special.concat(numeric,lowerCased,upperCased);
+  var randomPassword = "";
+  for (var i = 0; i < userInput; i++){
+    randomPassword += getRandom(generatedPassword)
+  }
+
+  return randomPassword;
 }
 
-// Function for getting a random element from an array
-function getRandom(arr) {
-  var randomIndex = Math.floor(Math.random()*arr.length);
-  var item = arr[randomIndex];
-  return item;
-}
 
-// Function to generate password with user input
-function generatePassword() {
-  getPasswordOptions();
-}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
