@@ -19,7 +19,14 @@ This code can be used to generate random password but is not secure. This is for
 
 ## Links
 
-https://darylcata.github.io/C
+GITHUB:
+
+https://github.com/darylcata/Random-Password-generator
+
+LIVE PAGE:
+
+
+
 
 ## License
 
