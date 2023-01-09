@@ -1,79 +1,26 @@
-# Module 5 Challenge: Password Generator
+# Title
 
-## Overview
+In this activity, we tackle the application of "function" and "random" in Javascript. The website showcases random password of your choosing.
 
-This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+## Description
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+ Being in our second week in Javascript, I have now understood some of the functions uses and how they work. In this activity we applied the "function" property, the "Math.random" property and "for loops". This activity really helped me understand how they work and how to apply them.
+ 
+ By clicking the generate password button, it will ask you how long your password would be. It needs to be between 10 - 64 characters. If chose not to be within these, it will prompt you. If you chose to be within these numbers, it will then ask you some password options, like including special, numeric, lower cased and upper cased character. It will then automatically display at the middle of the page having at least one character of your choice.
 
-## Instructions
+## Usage
 
-The following image shows the web application's appearance and functionality:
+This code can be used to generate random password but is not secure. This is for activity purposes only and passwords generated are not stored
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+## Screenshot
 
-
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 10 characters but no more than 64.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+![screenshot](https://user-images.githubusercontent.com/117319952/211237551-d719dd7b-181b-41bf-9ad1-40ed9a4b689f.jpg)
 
 
-## Review
+## Links
 
-You are required to submit the following for review:
+https://darylcata.github.io/C
 
-* The URL of the deployed application.
+## License
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+[MIT](https://choosealicense.com/licenses/mit/)
