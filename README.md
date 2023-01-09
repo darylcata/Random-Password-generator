@@ -25,6 +25,7 @@ https://github.com/darylcata/Random-Password-generator
 
 LIVE PAGE:
 
+https://darylcata.github.io/Random-Password-generator/
 
 
 
