@@ -6,7 +6,7 @@ In this activity, we tackle the application of "function" and "random" in Javasc
 
  Being in our second week in Javascript, I have now understood some of the functions uses and how they work. In this activity we applied the "function" property, the "Math.random" property and "for loops". This activity really helped me understand how they work and how to apply them.
  
- By clicking the generate password button, it will ask you how long your password would be. It needs to be between 10 - 64 characters. If chose not to be within these, it will prompt you. If you chose to be within these numbers, it will then ask you some password options, like including special, numeric, lower cased and upper cased character. It will then automatically display at the middle of the page having at least one character of your choice.
+ By clicking the generate password button, it will ask you how long your password would be. It needs to be between 10 - 64 characters. If chose not to be within these, it will prompt you. If you chose to be within these numbers, it will then ask you some password options, like including special, numeric, lower cased and upper cased character. It will then automatically display at the middle of the page,as shown below, having at least one character of your choice.
 
 ## Usage
 
